@@ -1,7 +1,7 @@
 export default function OAuth() {
   const clientKey = process.env.NEXT_PUBLIC_TIKTOK_CLIENT_KEY;
   const redirectUri = "https://booster-uploader.vercel.app/callback";
-  const scope = "user.info.profile";
+  const scope = "user.info.profile,video.upload";
   const state = "sandbox_test";
 
   const authUrl =
